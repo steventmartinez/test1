@@ -17,7 +17,7 @@
     <script src = "jspsych/utils.js" ></script>
     <script src = "jspsych/plugin-survey-text_SM.js" ></script>
     <link href = "jspsych/jspsych.css" rel= "stylesheet" type= "text/css">
-    <script type="text/javascript" src= "jspsych/plugin-pavlovia_2022_1_1.js"></script>
+    <script type="text/javascript" src= "jspsych/plugin-pavlovia_2022.1.1.js"></script>
     <style>
              body {
     background-color: silver;
@@ -70,19 +70,18 @@ var jsPsych = initJsPsych({
 var timeline = [];
 
 
- /* init connection with pavlovia.org */
- var pavlovia_init = {
+    /* init connection with pavlovia.org */
+		var pavlovia_init = {
 			type: jsPsychPavlovia,
 			command: "init"
 		};
 		timeline.push(pavlovia_init);
 
 
-
-  timeline.push({
-  type: jsPsychFullscreen,
-  fullscreen_mode: true
-  });
+  // timeline.push({
+  // type: jsPsychFullscreen,
+  // fullscreen_mode: true
+  // });
 
 
 
@@ -112,17 +111,13 @@ video3_image = 'imgs/video3.png'
 video4_image = 'imgs/video4.png'
 video5_image = 'imgs/video5.png'
 video6_image = 'imgs/video6.png'
-video7_image =  'imgs/video7.png'
+video7_image = 'imgs/video7.png'
 video8_image = 'imgs/video8.png'
 
 
 
 
-
-
 image_stimuli = [video1_image, video2_image, video3_image, video4_image, video5_image, video6_image, video7_image, video8_image];
-
-
 
 
 
@@ -134,7 +129,6 @@ var preload = {
 };
 
 timeline.push(preload);
-
 
 
 
